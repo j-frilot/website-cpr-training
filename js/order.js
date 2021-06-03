@@ -31,14 +31,11 @@
 
         var width = "100%";
         var height = "100%";
-        var color = "red";
         iframe.style.minHeight = "500px";
 
         iframe.style.width = width;
         iframe.style.height = height;
-        iframe.style.color = color;
         iframe.style.border = "none";
-        // iframe.classList.add("spinner-border");
         iframe.src =
             "https://squareup.com/appointments/buyer/widget/9sg3hnbo8t74fw/L1W498A5MHVAS";
 

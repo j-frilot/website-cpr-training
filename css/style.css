@@ -61,6 +61,11 @@ li {
     font-size: 4.5rem;
 }
 
+#map {
+    height: 400px;
+    width: 100%;
+}
+
 .footer-banner {
     background: url("https://res.cloudinary.com/dsip2gx3i/image/upload/v1622567866/CPR%20-%20Calibras/book-now-banner.jpg");
     background-position: center;
