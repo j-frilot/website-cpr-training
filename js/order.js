@@ -31,13 +31,13 @@
 
         var width = "100%";
         var height = "100%";
-        iframe.style.minHeight = "500px";
+        iframe.style.minHeight = "800px";
 
         iframe.style.width = width;
         iframe.style.height = height;
         iframe.style.border = "none";
         iframe.src =
-            "https://squareup.com/appointments/buyer/widget/9sg3hnbo8t74fw/L1W498A5MHVAS";
+            "https://squareup.com/appointments/buyer/widget/ewe7vqeto5h4dn/LD91QMJZ61CSM";
 
         scriptTag.parentNode.insertBefore(iframe, scriptTag);
     }
@@ -56,7 +56,7 @@
         );
         button.setAttribute(
             "href",
-            "https://squareup.com/appointments/book/9sg3hnbo8t74fw/L1W498A5MHVAS/start"
+            "https://squareup.com/appointments/book/ewe7vqeto5h4dn/LD91QMJZ61CSM/start"
         );
         button.textContent = "Book Appointment Now";
 
@@ -84,7 +84,7 @@
 
     if (takeOverIframe()) {
         window.location =
-            "https://squareup.com/appointments/buyer/widget/9sg3hnbo8t74fw/L1W498A5MHVAS";
+            "https://squareup.com/appointments/buyer/widget/ewe7vqeto5h4dn/LD91QMJZ61CSM";
     } else {
         if (scriptParentWidth() < 280) {
             embedBookingButton();

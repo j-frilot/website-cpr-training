@@ -19,6 +19,10 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
             integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
+        <!-- map -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css"
+            type="text/css">
+
         <!-- normalize -->
         <link rel="stylesheet" href="css/normalize.css">
 
@@ -83,7 +87,7 @@
                             <li class="nav-item">
                                 <a class="nav-link px-3 text-white active" href="contact.html">Contact Us</a>
                             </li>
-                            <li class="nav-item border border-2">
+                            <li class="nav-item">
                                 <a class="nav-link px-3 text-white" href="book.html">Book Now</a>
                             </li>
                         </ul>
@@ -101,64 +105,52 @@
             </section>
 
             <section>
+                
                 <div class="container row margin mx-auto">
-                    
+                    <h2 class="fs-1">Send us your questions or concerns</h2>
                     <!-- Start Contact Form -->
-                    <div class="col-lg-8">
-                        <form class="contact-form row" method="post" action="#" role="form">
+                    <div class="col-lg-8 bg-myred rounded">
+                        <form class="contact-form row m-auto " action="https://formspree.io/f/moqpoywe" method="POST" role="form">
+                            <div class="row">
+                                <div class="col-lg-4 mb-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control form-control-lg" id="floatingName" name="Name"
+                                            placeholder="Name" required>
+                                        <label for="floatingname">Name</label>
+                                    </div>
+                                </div><!-- End Input Name -->
                 
-                            <div class="col-lg-6 mb-4">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control form-control-lg" id="floatingFName" name="inputfirstname"
-                                        placeholder="First Name">
-                                    <label for="floatingname">Name</label>
+                                <div class="col-lg-4 mb-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control form-control-lg" id="floatingphone" name="Phone Number" placeholder="Phone">
+                                        <label for="floatingphone">Phone</label>
+                                    </div>
                                 </div>
-                            </div><!-- End Input First Name -->
+                                <!-- End Input Phone -->
                 
-                            <div class="col-lg-6 mb-4">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control form-control-lg" id="floatingname" name="inputlastname"
-                                        placeholder="Name">
-                                    <label for="floatingname">Name</label>
-                                </div>
-                            </div><!-- End Input Last Name -->
-                
-                            <div class="col-lg-6 mb-4">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control form-control-lg" id="floatingemail" name="inputemail"
-                                        placeholder="Email">
-                                    <label for="floatingemail">Email</label>
-                                </div>
-                            </div><!-- End Input Email -->
-                
-                            <div class="col-lg-6 mb-4">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control form-control-lg" id="floatingphone" name="inputphone"
-                                        placeholder="Phone">
-                                    <label for="floatingphone">Phone</label>
-                                </div>
-                            </div><!-- End Input Phone -->
-                
-                            <div class="col-12">
-                                <div class="form-floating mb-4">
-                                    <input type="text" class="form-control form-control-lg" id="floatingsubject" name="inputsubject"
-                                        placeholder="Subject">
-                                    <label for="floatingsubject">Subject</label>
-                                </div>
-                            </div><!-- End Input Subject -->
-                
-                            <div class="col-12">
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" rows="8" placeholder="Message" id="floatingtextarea"></textarea>
-                                    <label for="floatingtextarea">Message</label>
-                                </div>
-                            </div><!-- End Textarea Message -->
-                
-                            <div class="col-md-12 col-12 m-auto">
-                                <button type="submit" class="btn btn-secondary bg-mymedium px-4 py-2 text-light">Send
-                                    Message</button>
+                                <div class="col-lg-4 mb-4">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control form-control-lg" id="floatingemail" name="_replyto"
+                                            placeholder="Email" required>
+                                        <label for="floatingemail">Email</label>
+                                    </div>
+                                </div><!-- End Input Email -->
                             </div>
-                
+                            
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" rows="8" placeholder="Message" id="floatingtextarea" name="message" required></textarea>
+                                        <label for="floatingtextarea">Message</label>
+                                    </div>
+                                </div><!-- End Textarea Message -->
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3 col-3 m-auto">
+                                    <button type="submit" class="btn btn-secondary bg-mymedium px-4 py-2 text-light mx-auto">Send</button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <div class="col-lg-4">
@@ -201,6 +193,12 @@
                     <h1>Our Location</h1>
                 </div>
             </section> -->
+
+            <!-- MAP TWO -->
+            <section class="container">
+                <h2>We're Local</h2>
+                <div id="map" class="map"></div>
+            </section>
         </main>
 
 
@@ -283,6 +281,26 @@
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIH9atxo_7aIRYSjsiwc_E1nlIn74h_AI&callback=initMap">
         </script> -->
         <!-- <script src="js/map.js"></script> -->
+        <!-- map -->
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+        <script type="text/javascript">
+            var map = new ol.Map({
+                target: 'map',
+                layers: [
+                    new ol.layer.Tile({
+                        source: new ol.source.OSM()
+                    })
+                ],
+                view: new ol.View({
+                    center: ol.proj.fromLonLat([-90.46091, 30.05382]),
+                    // lng, lat
+                    zoom:18,
+                    
+                }),
+                
+            });
+            
+        </script>
     </body>
     
 </html>

@@ -9,6 +9,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: #e2918f;
 }
 
 a {
@@ -38,6 +39,12 @@ li {
 .bg-myred {
     background-color: #d43c38;
 }
+.my-red {
+    color: #e2918f;
+}
+.bg-mylightred {
+    background-color: #e2918f;
+}
 
 .mydarkred {
     color: #8d2826;
@@ -58,6 +65,10 @@ h2 {
 
 header {
     font-family: "Lobster", sans-serif;
+}
+
+.active {
+    border: 2px solid #fff;
 }
 
 .jumbotron {
@@ -81,6 +92,13 @@ header {
     font-size: 4.5rem;
 }
 
+form {
+    padding-top: 40px;
+}
+
+form button {
+    margin-bottom: 10px;
+}
 .contact-box {
     justify-content: space-between;
 }
@@ -101,3 +119,8 @@ header {
 footer ul li {
     line-height: 2;
 }
+
+/* .map {
+    height: 400px;
+    width: 100%;
+} */
