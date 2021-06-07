@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 html {
     font-size: 14px;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -24,29 +26,38 @@ li {
 }
 
 .mydark {
-    color: #323b43;
+    color: #471413;
 }
 .bg-mydark {
-    background-color: #323b43;
+    background-color: #471413;
 }
 
-.mymedium {
+.myred {
     color: #710e11;
 }
-.bg-mymedium {
-    background-color: #710e11;
+.bg-myred {
+    background-color: #d43c38;
 }
 
-.mylight {
-    color: #a6698c;
+.mydarkred {
+    color: #8d2826;
 }
-.bg-mylight {
-    background-color: #a6698c;
+.bg-mydarkred {
+    background-color: #8d2826;
 }
 
 .margin {
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+h1,
+h2 {
+    font-family: "Lobster", sans-serif;
+}
+
+header {
+    font-family: "Lobster", sans-serif;
 }
 
 .jumbotron {
@@ -59,7 +70,7 @@ li {
 }
 
 .grid-overlay {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .about-jumbo {
