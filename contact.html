@@ -14,22 +14,16 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
             rel="stylesheet">
-
         <!-- font awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
             integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
         <!-- map -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css"
-            type="text/css">
-
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
         <!-- normalize -->
         <link rel="stylesheet" href="css/normalize.css">
-
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
         <!-- custom stylesheet -->
         <link rel="stylesheet" href="css/style.css">
 
@@ -39,22 +33,22 @@
     <body>
 
         <header>
-            <div class="top-bar bg-mydark py-1">
+            <div class="top-bar bg-dark py-1">
         
                 <ul class="container mx-auto d-flex justify-content-evenly align-items-center">
                     <li><img src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1622776594/CPR%20-%20Calibras/ama.png"
                             alt="ama-approved" width="120px" class="img-fluid rounded"></li>
                     <li>
                         <a href="https://calebras-heart.square.site/?fbclid=IwAR0hJ6biCnAjjEwTi8pddg313t-niDE9c4Eyp3bhk5uD4r4yMx-EyPliq-o"
-                            class="text-white px-2" target="_blank" class="bar-link"><i class="fas fa-calendar-alt"></i> Book
-                            Now</a>
+                            class="text-light px-2" target="_blank" class="bar-link"><i class="fas fa-calendar-alt"></i>
+                            Schedule</a>
                     </li>
                     <li>
-                        <a href="#" class="text-white px-2" target="_blank"><i class="fas fa-mail-bulk"></i>
-                            calebrasheartcpr@gmail.com</a>
+                        <a href="mailto:calebrasheartcpr@gmail.com" class="text-light px-2" target="_blank"><i
+                                class="fas fa-mail-bulk"></i> calebrasheartcpr@gmail.com</a>
                     </li>
                     <li>
-                        <a href="tel:504-858-3697" target="_blank" class="text-white px-2"><i class="fas fa-phone"></i>
+                        <a href="tel:504-858-3697" target="_blank" class="text-light px-2"><i class="fas fa-phone"></i>
                             1-504-858-3697</a>
                     </li>
         
@@ -63,32 +57,39 @@
             </div>
         
         
-            <nav class="navbar navbar-expand-md navbar-light bg-myred">
+            <nav class="navbar navbar-expand-md navbar-light bg-danger">
                 <div class="container">
-                    <a class="navbar-brand fs-2 d-flex align-items-center text-white" href="index.html">
+        
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand fs-2 d-flex align-items-center text-light d-md-none d-lg-none d-block"
+                        href="index.html">
                         <h1 class="fw-bold">Calebra's Heart</h1><img
                             src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1622776589/CPR%20-%20Calibras/logo-dark.png"
                             alt="heart" width="120px" class="img-fluid">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto  fs-5 fw-bolder">
-        
-                            <li class="nav-item">
-                                <a class="nav-link px-3 text-white" href="index.html">Home</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto fs-5 fw-bolder align-items-center">
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-light" href="index.html">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-3 text-white " href="about.html">About Calebra's</a>
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-light" href="about.html">About Calebra's</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-3 text-white active" href="contact.html">Contact Us</a>
+                            <li class="nav-item px-3">
+                                <a class="navbar-brand fs-2 d-flex align-items-center text-light" href="index.html">
+                                    <h1 class="fw-bold">Calebra's Heart</h1>
+                                    <img src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1622776589/CPR%20-%20Calibras/logo-dark.png"
+                                        alt="heart" width="120px" class="img-fluid" />
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-3 text-white" href="book.html">Book Now</a>
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-light active" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link text-light" href="book.html">Book Now</a>
                             </li>
                         </ul>
                     </div>
@@ -98,111 +99,116 @@
 
         <main>
 
+            <!-- INTRO BANNER -->
             <section class="jumbotron about-jumbo">
-                <div class="jumbotron-content container">
-                    <h2 class="pt-3 text-center display-3 fw-bold text-light">Contact Us</h2>
+                <div class="container">
+                    <div class="jumbotron-content">
+                        <h2 class="pt-3 text-center display-3 fw-bold text-light">Contact Us</h2>
+                    </div>
                 </div>
             </section>
 
+            <!-- FORM & CONTACT BOX -->
             <section>
-                
-                <div class="container row margin mx-auto">
-                    <h2 class="fs-1">Send us your questions or concerns</h2>
-                    <!-- Start Contact Form -->
-                    <div class="col-lg-8 bg-myred rounded">
-                        <form class="contact-form row m-auto " action="https://formspree.io/f/moqpoywe" method="POST" role="form">
-                            <div class="row">
-                                <div class="col-lg-4 mb-4">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control form-control-lg" id="floatingName" name="Name"
-                                            placeholder="Name" required>
-                                        <label for="floatingname">Name</label>
+                <div class="container">
+                    <div class="row margin mx-auto">
+                        <h2 class="fs-1">Send us your questions or concerns</h2>
+
+                        <!-- Start Contact Form -->
+                        <div class="col-lg-8 bg-danger rounded">
+                            <form class="contact-form row" action="https://formspree.io/f/moqpoywe" method="POST" role="form">
+                                <div class="row mx-0 my-3 p-0">
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control form-control-lg" id="floatingName" name="Name"
+                                                placeholder="Name" required>
+                                            <label for="floatingname">Name</label>
+                                        </div>
+                                    </div><!-- End Input Name -->
+                    
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control form-control-lg" id="floatingphone" name="Phone Number"
+                                                placeholder="Phone">
+                                            <label for="floatingphone">Phone</label>
+                                        </div>
                                     </div>
-                                </div><!-- End Input Name -->
-                
-                                <div class="col-lg-4 mb-4">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control form-control-lg" id="floatingphone" name="Phone Number" placeholder="Phone">
-                                        <label for="floatingphone">Phone</label>
+                                    <!-- End Input Phone -->
+                    
+                                    <div class="col-md-4">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control form-control-lg" id="floatingemail" name="_replyto"
+                                                placeholder="Email" required>
+                                            <label for="floatingemail">Email</label>
+                                        </div>
                                     </div>
+                                    <!-- End Input Email -->
                                 </div>
-                                <!-- End Input Phone -->
-                
-                                <div class="col-lg-4 mb-4">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control form-control-lg" id="floatingemail" name="_replyto"
-                                            placeholder="Email" required>
-                                        <label for="floatingemail">Email</label>
-                                    </div>
-                                </div><!-- End Input Email -->
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-12">
+                    
+                                <div>
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" rows="8" placeholder="Message" id="floatingtextarea" name="message" required></textarea>
+                                        <textarea class="form-control" rows="8" placeholder="Message" id="floatingtextarea"
+                                            name="message" required></textarea>
                                         <label for="floatingtextarea">Message</label>
                                     </div>
-                                </div><!-- End Textarea Message -->
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-3 col-3 m-auto">
-                                    <button type="submit" class="btn btn-secondary bg-mymedium px-4 py-2 text-light mx-auto">Send</button>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-4">
-                        <ul class="d-flex flex-column align-items-center text-center h-100 fs-5 justify-content-between border border-2 contact-box">
-                            <li><svg xmlns="http://www.w3.org/2000/svg" width="48" height="75" fill="currentColor" class="bi bi-pin-map"
-                                viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
-                                <path fill-rule="evenodd"
-                                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
-                                </svg>
-                            </li>
-                            <li><p>1317 W Airline Hwy, Suite L<br> Laplace, La 70068</p></li>
-                            <li><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-telephone-inbound"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                </svg>
-                            </li>
-                            <li><a href="tel:504-858-3697" target="_blank" class="bar-link">1-504-858-3697</a></li>
-                            <li><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-envelope"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                                </svg>
-                            </li>
-                            <li><a href="#" class="bar-link" target="_blank"> calebrasheartcpr@gmail.com</a></li>
-                        </ul>
+                                <!-- End Textarea Message -->
+                                
+                    
+                                <div class="text-center">
+                                    <button type="submit"
+                                        class="btn btn-secondary bg-dark px-4 py-2 text-light mx-auto">Send</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul
+                                class="d-flex flex-column align-items-center text-center h-100 fs-5 justify-content-between border border-2 contact-box">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="48" height="75" fill="currentColor" class="bi bi-pin-map"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <p>1317 W Airline Hwy, Suite L<br> Laplace, La 70068</p>
+                                </li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+                                        class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                </li>
+                                <li><a href="tel:504-858-3697" target="_blank" class="bar-link">1-504-858-3697</a></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+                                        class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                    </svg>
+                                </li>
+                                <li><a href="mailto:calebrasheartcpr@gmail.com" class="bar-link" target="_blank">
+                                        calebrasheartcpr@gmail.com</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
-            
-            
-            <!-- End Contact Form -->
 
-            
-
-            <!-- <section class="container map mx-auto">
-                <div id="map">
-                    <h1>Our Location</h1>
+            <!-- MAP -->
+            <section>
+                <div class="container">
+                    <h2>We're Local</h2>
+                    <div id="map" class="rounded"></div>
                 </div>
-            </section> -->
-
-            <!-- MAP TWO -->
-            <section class="container">
-                <h2>We're Local</h2>
-                <div id="map" class="map"></div>
             </section>
+
         </main>
 
 
-        <footer class="bg-mydarkred">
+        <footer class="bg-dark">
             <div class="footer-banner"></div>
         
         
@@ -251,7 +257,7 @@
                                 class="bi bi-envelope" viewBox="0 0 16 16">
                                 <path
                                     d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                            </svg><a href="#" class="bar-link" target="_blank"> calebrasheartcpr@gmail.com</a></li>
+                            </svg><a href="mailto:calebrasheartcpr@gmail.com" class="bar-link" target="_blank"> calebrasheartcpr@gmail.com</a></li>
                     </ul>
                 </div>
         
@@ -276,31 +282,19 @@
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-            </script>
-        <!-- <script async
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIH9atxo_7aIRYSjsiwc_E1nlIn74h_AI&callback=initMap">
-        </script> -->
-        <!-- <script src="js/map.js"></script> -->
+        </script>
+
         <!-- map -->
-        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
-        <script type="text/javascript">
-            var map = new ol.Map({
-                target: 'map',
-                layers: [
-                    new ol.layer.Tile({
-                        source: new ol.source.OSM()
-                    })
-                ],
-                view: new ol.View({
-                    center: ol.proj.fromLonLat([-90.46091, 30.05382]),
-                    // lng, lat
-                    zoom:18,
-                    
-                }),
-                
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibWVsbG9tYW5kZXNpZ25zIiwiYSI6ImNrcHB0dHBpbDF2ZHoybnJ4dnV0eHpseG0ifQ._UFR5k1C_CUJZZdJi7tMGA';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-90.4934649884052, 30.07187582202743],
+                zoom: 17
             });
-            
         </script>
     </body>
-    
 </html>
+

@@ -26,33 +26,6 @@ li {
     list-style: none;
 }
 
-.mydark {
-    color: #471413;
-}
-.bg-mydark {
-    background-color: #471413;
-}
-
-.myred {
-    color: #710e11;
-}
-.bg-myred {
-    background-color: #d43c38;
-}
-.my-red {
-    color: #e2918f;
-}
-.bg-mylightred {
-    background-color: #e2918f;
-}
-
-.mydarkred {
-    color: #8d2826;
-}
-.bg-mydarkred {
-    background-color: #8d2826;
-}
-
 .margin {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -96,16 +69,17 @@ form {
     padding-top: 40px;
 }
 
-form button {
-    margin-bottom: 10px;
-}
 .contact-box {
     justify-content: space-between;
 }
 
 #map {
-    height: 400px;
+    height: 300px;
     width: 100%;
+}
+
+.square-frame {
+    /* background-image: url("/images/logo-dark.png"); */
 }
 
 .footer-banner {
@@ -119,8 +93,3 @@ form button {
 footer ul li {
     line-height: 2;
 }
-
-/* .map {
-    height: 400px;
-    width: 100%;
-} */
