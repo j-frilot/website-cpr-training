@@ -32,10 +32,8 @@ li {
 }
 
 h1,
-h2 {
-    font-family: "Lobster", sans-serif;
-}
-
+h2,
+h3,
 header {
     font-family: "Lobster", sans-serif;
 }
@@ -45,20 +43,26 @@ header {
 }
 
 .jumbotron {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("https://res.cloudinary.com/dsip2gx3i/image/upload/v1622567866/CPR%20-%20Calibras/mannequin-1.jpg"); */
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("https://res.cloudinary.com/dsip2gx3i/image/upload/v1622567866/CPR%20-%20Calibras/mannequin-1.jpg");
-    background-size: cover;
+        url("/images/main-banner.jpg");
+    background-size: auto;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
+    background-repeat: repeat;
 }
 
 .grid-overlay {
     background: rgba(0, 0, 0, 0.5);
 }
 
+.home-jumbo {
+    height: 700px;
+    background-position: center;
+}
+
 .about-jumbo {
-    height: 150px !important;
+    height: 350px;
 }
 
 .box-icon {
@@ -71,15 +75,6 @@ form {
 
 .contact-box {
     justify-content: space-between;
-}
-
-#map {
-    height: 300px;
-    width: 100%;
-}
-
-.square-frame {
-    /* background-image: url("/images/logo-dark.png"); */
 }
 
 .footer-banner {
