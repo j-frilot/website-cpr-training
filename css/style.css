@@ -47,9 +47,9 @@ header {
         url("https://res.cloudinary.com/dsip2gx3i/image/upload/v1622567866/CPR%20-%20Calibras/mannequin-1.jpg"); */
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url("/images/main-banner.jpg");
-    background-size: auto;
+    background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
 
 .grid-overlay {
