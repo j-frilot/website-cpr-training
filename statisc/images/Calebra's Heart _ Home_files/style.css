@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #e2918f;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.margin {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+h1,
+h2,
+h3,
+header {
+    font-family: "Lobster", sans-serif;
+}
+
+.active {
+    border: 2px solid #fff;
+}
+
+.jumbotron {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("https://res.cloudinary.com/dsip2gx3i/image/upload/v1622567866/CPR%20-%20Calibras/mannequin-1.jpg"); */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("https://res.cloudinary.com/dsip2gx3i/image/upload/v1623645692/CPR%20-%20Calibras/banner-mainc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.home-jumbo {
+    height: 700px;
+    background-position: center;
+}
+
+.about-jumbo {
+    height: 350px;
+}
+
+.box-icon {
+    font-size: 4.5rem;
+}
+
+form {
+    padding-top: 40px;
+}
+
+.contact-box {
+    justify-content: space-between;
+}
+
+.footer-banner {
+    background: url("https://res.cloudinary.com/dsip2gx3i/image/upload/v1622567866/CPR%20-%20Calibras/banner-book.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 125px;
+}
+
+footer ul li {
+    line-height: 2;
+}
