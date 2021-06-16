@@ -27,7 +27,9 @@ const Home = () => {
                         <Image
                             src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1622776594/CPR%20-%20Calibras/logo-ama-1.png"
                             alt="ama-approved"
-                            className="mt-3 img-fluid rounded"
+                            className="mt-3"
+                            fluid
+                            rounded
                         />
                     </div>
                 </Container>

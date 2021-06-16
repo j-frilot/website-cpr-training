@@ -1,15 +1,17 @@
 import React from "react";
+import Image from "react-bootstrap/Image";
 
 const Topbar = () => {
     return (
         <div className="top-bar bg-dark py-1">
             <ul className="container mx-auto d-flex justify-content-evenly align-items-center">
                 <li>
-                    <img
+                    <Image
                         src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1622776594/CPR%20-%20Calibras/logo-ama-1.png"
                         alt="ama-approved"
                         width="120px"
-                        className="img-fluid rounded"
+                        fluid
+                        rounded
                     />
                 </li>
                 <li>

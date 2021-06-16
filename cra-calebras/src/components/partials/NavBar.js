@@ -47,7 +47,7 @@ const NavBar = () => {
                                     src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1622776589/CPR%20-%20Calibras/logo-dark.png"
                                     alt="heart"
                                     width="120px"
-                                    className="img-fluid"
+                                    fluid
                                 />
                             </div>
                         </Link>
@@ -58,7 +58,7 @@ const NavBar = () => {
                         </Link>
                     </Nav.Item>
                     <Nav.Item as="li" className="px-3">
-                        <Link to="/booking" className="text-light">
+                        <Link to="/book" className="text-light">
                             Book Now
                         </Link>
                     </Nav.Item>

@@ -2,30 +2,18 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-// import Physicians from "./components/Physicians/Physicians";
-// import Covid from "./components/Covid/Covid";
-// import Doctor from "./components/Doctor/Doctor";
-// import Appointment from "./components/Appointments/Appointment";
-// import Contact from "./components/Contact/Contact";
+import Contact from "./components/Contact/Contact";
+import Book from "./components/Book/Book";
 
 const Router = () => {
     return (
         <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/book" component={Book} />
         </Switch>
     );
 };
 
 export default Router;
-
-// /*
-//             <Switch>
-//                 // <Route exact path="/" component={Home} />
-//                 // <Route exact path="/physicians" component={Physicians} />
-//                 // <Route exact path="/covid" component={Covid} />
-//                 // <Route exact path="/physicians/:id" component={Doctor} />
-//                 // <Route exact path="/appointment" component={Appointment} />
-//                 // <Route exact path="/contact-us" component={Contact} />
-//             </Switch>{" "}
-//             */
