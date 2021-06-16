@@ -37,9 +37,9 @@ const NavBar = () => {
                             About Calebra's
                         </Link>
                     </Nav.Item>
-                    <Nav.Item as="li">
+                    <Nav.Item as="li" className="d-none d-md-flex">
                         <Link to="/" className="px-3">
-                            <div className="d-flex align-items-center">
+                            <div className="d-flex align-items-center ">
                                 <h1 className="fw-bold text-light">
                                     Calebra's Heart
                                 </h1>

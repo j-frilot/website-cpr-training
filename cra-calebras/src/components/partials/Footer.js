@@ -20,9 +20,10 @@ const Footer = () => {
                     />
                     <Footerbox
                         title="Quick Links"
-                        path_one="/"
+                        path_one="/terms"
                         link_one="Booking Policy"
-                        link_two="Lorem, ipsum dolor."
+                        path_two="/terms"
+                        link_two="Refund Policy"
                         path_three="https://cpr.heart.org/en"
                         link_three="American Heart Association"
                         link_four="Lorem, ipsum dolor."
