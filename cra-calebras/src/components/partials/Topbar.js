@@ -1,9 +1,11 @@
 import React from "react";
-import Image from "react-bootstrap/Image";
+import { Link } from "react-router-dom";
+
 import {
     CalendarDate,
     TelephoneInboundFill,
-    EnvelopeFill
+    EnvelopeFill,
+    CardChecklist
 } from "react-bootstrap-icons";
 
 const Topbar = () => {
@@ -11,13 +13,10 @@ const Topbar = () => {
         <div className="top-bar bg-dark py-1">
             <ul className="container mx-auto d-flex justify-content-evenly align-items-center">
                 <li>
-                    <Image
-                        src="https://res.cloudinary.com/dsip2gx3i/image/upload/v1622776594/CPR%20-%20Calibras/logo-ama-1.png"
-                        alt="ama-approved"
-                        width="120px"
-                        fluid
-                        rounded
-                    />
+                    <Link to="/terms" className="text-light">
+                        <CardChecklist className="fs-4" />
+                        Booking Policy
+                    </Link>
                 </li>
                 <li>
                     <a

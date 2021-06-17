@@ -18,6 +18,15 @@ const Footerbox = (props) => {
                 <li>
                     <Link to={`${props.path_four}`}>{props.link_four}</Link>
                 </li>
+                <li>
+                    <a
+                        href={`${props.link_five}`}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        {props.link_five}
+                    </a>
+                </li>
             </ul>
         </div>
     );

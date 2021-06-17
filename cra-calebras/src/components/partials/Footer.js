@@ -29,9 +29,8 @@ const Footer = () => {
                         link_one="Booking Policy"
                         path_two="/terms"
                         link_two="Refund Policy"
-                        path_three="https://cpr.heart.org/en"
-                        link_three="American Heart Association"
-                        link_four="Lorem, ipsum dolor."
+                        path_five="https://www.heart.org/"
+                        link_five="American Heart association"
                     />
 
                     <div className="col-md-4 ">
@@ -71,7 +70,7 @@ const Footer = () => {
             </div>
 
             <div className="bg-dark footer-bar">
-                <div className="container text-light d-flex justify-content-lg-between align-items-center">
+                <div className="container text-light d-flex justify-content-between align-items-center">
                     <p>&copy; 2021 Calebra's Heart LLC</p>
                     <a
                         href="https://joshuafrilot.netlify.app/"
