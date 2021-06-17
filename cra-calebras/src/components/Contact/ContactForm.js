@@ -9,7 +9,7 @@ const ContactForm = () => {
     return (
         <Container className="p-5">
             <h3 className="text-center display-4">
-                Send us your questions or concerns
+                Have Questions? Contact Us!
             </h3>
             <Form
                 className="contact-form"
@@ -18,7 +18,7 @@ const ContactForm = () => {
                 role="form"
             >
                 <Row>
-                    <Col md={4}>
+                    <Col md={{ span: 4, offset: 4 }}>
                         <Form.Group className="form-floating">
                             <Form.Control
                                 type="text"
@@ -31,8 +31,10 @@ const ContactForm = () => {
                             <Form.Label htmlFor="floatingName">Name</Form.Label>
                         </Form.Group>
                     </Col>
+                </Row>
 
-                    <Col md={4}>
+                <Row>
+                    <Col md={{ span: 4, offset: 4 }}>
                         <Form.Group className="form-floating">
                             <Form.Control
                                 type="text"
@@ -46,8 +48,10 @@ const ContactForm = () => {
                             </Form.Label>
                         </Form.Group>
                     </Col>
+                </Row>
 
-                    <Col md={4}>
+                <Row>
+                    <Col md={{ span: 6, offset: 3 }}>
                         <Form.Group className="form-floating">
                             <Form.Control
                                 type="text"
@@ -65,7 +69,7 @@ const ContactForm = () => {
                 </Row>
 
                 <Row>
-                    <Col>
+                    <Col md={{ span: 6, offset: 3 }}>
                         <Form.Group className="form-floating">
                             <Form.Control
                                 className="form-control"

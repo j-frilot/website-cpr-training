@@ -5,9 +5,7 @@ import Card from "react-bootstrap/Card";
 const AboutBoxes = (props) => {
     return (
         <Col md={4}>
-            <Card.Text>
-                <i className={`${props.icon}`}></i>
-            </Card.Text>
+            <Card.Text>{props.icon}</Card.Text>
 
             <Card.Title>
                 <h2 className="fw-bold">{props.title}</h2>

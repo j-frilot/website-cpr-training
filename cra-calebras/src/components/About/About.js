@@ -5,6 +5,7 @@ import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import Col from "react-bootstrap/Col";
+import { BookmarkCheckFill } from "react-bootstrap-icons";
 
 const About = () => {
     return (
@@ -13,21 +14,21 @@ const About = () => {
             <Container className="p-5">
                 <Row className="text-center">
                     <AboutBoxes
-                        icon="fas fa-user-check box-icon"
+                        icon=<BookmarkCheckFill className="display-2" />
                         title="Certified Instructor"
                         text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla laudantium illo ducimus esse est doloribus
                                 natusreprehenderit cum deserunt, maxime nemo commodi voluptatem adipisci ad."
                     />
 
                     <AboutBoxes
-                        icon="fas fa-user-check box-icon"
+                        icon=<BookmarkCheckFill className="display-2" />
                         title="Our Mission"
                         text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla laudantium illo ducimus esse est doloribus
                                 natusreprehenderit cum deserunt, maxime nemo commodi voluptatem adipisci ad."
                     />
 
                     <AboutBoxes
-                        icon="fas fa-user-check box-icon"
+                        icon=<BookmarkCheckFill className="display-2" />
                         title="Certified Instructor"
                         text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla laudantium illo ducimus esse est doloribus
                                 natusreprehenderit cum deserunt, maxime nemo commodi voluptatem adipisci ad."

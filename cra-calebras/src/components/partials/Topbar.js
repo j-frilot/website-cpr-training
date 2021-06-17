@@ -1,5 +1,10 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
+import {
+    CalendarDate,
+    TelephoneInboundFill,
+    EnvelopeFill
+} from "react-bootstrap-icons";
 
 const Topbar = () => {
     return (
@@ -21,8 +26,7 @@ const Topbar = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <i className="fas fa-calendar-alt"></i>
-                        Schedule
+                        <CalendarDate className="fs-4" /> Schedule
                     </a>
                 </li>
                 <li>
@@ -32,7 +36,7 @@ const Topbar = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <i className="fas fa-mail-bulk"></i>{" "}
+                        <EnvelopeFill className="fs-4" />{" "}
                         calebrasheartcpr@gmail.com
                     </a>
                 </li>
@@ -43,8 +47,7 @@ const Topbar = () => {
                         rel="noreferrer"
                         className="text-light px-2"
                     >
-                        <i className="fas fa-phone"></i>
-                        1-504-858-3697
+                        <TelephoneInboundFill className="fs-4" /> 1-504-858-3697
                     </a>
                 </li>
             </ul>
